@@ -11,6 +11,17 @@ def comp(num1, num2):
 
 def edit(num, day, k):
     while day:
-        num *= k
-        day -= 1
-    return num
+        if (type (day) == int) and (type(num) == int or type(num) == float) and (type(k) == int or type(k) == float):
+            num *= k
+            day -= 1
+            return num
+        else:
+            raise TypeError
+
+
+try:
+    print(edit())
+except TypeError:
+    print("Вводить только числа")
+except ValueError:
+    print("Некорректные числа")
