@@ -14,6 +14,7 @@ def edit(num, day, k):
         if (type (day) == int) and (type(num) == int or type(num) == float) and (type(k) == int or type(k) == float):
             num *= k
             day -= 1
+            time(datetime.datetime.today (),"Была вызвана функция" )
             return num
         else:
             raise TypeError
@@ -25,3 +26,19 @@ except TypeError:
     print("Вводить только числа")
 except ValueError:
     print("Некорректные числа")
+
+
+
+
+
+import datetime
+def time (date, messege):
+    with open ('text.txt', 'a') as a:
+        return a.write(date, messege)
+
+
+
+
+
+
+
