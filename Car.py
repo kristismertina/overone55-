@@ -8,3 +8,10 @@ class Car_truck:
 
 def __str__ (self):
     return f"{self.max_over}, {self.min_over}, {self.weight_truck}, {self.travel_time} "
+
+def type_truck (self, name):
+    self.type += name
+    if self.type ==  "Mersedes - Benz"  or "Reno":
+         return name
+    else:
+        print("Not truck")
