@@ -15,3 +15,31 @@ def type_truck (self, name):
          return name
     else:
         print("Not truck")
+
+
+def overclocking (self, value):
+    if value == int:
+        self.min_over += value
+        if self.min_over <= self.max_over and self.min_over > 0:
+            print("Permissible speed")
+        else:
+            print("Unacceptable speed")
+    else:
+        raise TypeError
+
+try:
+    overclocking()
+except TypeError as a:
+    print("Not a number", a)
+
+import datetime
+def time_work (self, time_start):
+    now = datetime.datetime.today().strftime("%H%M%S")
+    start = datetime.datetime(time_start).strftime("%H%M%S")
+    result = now - start
+    write_time_in_doc()
+    return result
+
+def write_time_in_doc (result):
+    with open("time_in_way.txt", "a") as a:
+        a.write(result)
