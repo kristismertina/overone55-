@@ -43,3 +43,8 @@ def time_work (self, time_start):
 def write_time_in_doc (result):
     with open("time_in_way.txt", "a") as a:
         a.write(result)
+
+
+def weight_with_cargo (self, cargo):
+    total_weight = weight_truck + cargo
+    return total_weight
