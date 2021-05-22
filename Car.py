@@ -1,16 +1,10 @@
 class Car_truck:
-    def __init__(self, type, year_of_issue, weight):
+    def __init__(self, type, max_over, min_over, weight_truck, travel_time):
         self.type = type
-        self.year_of_issue = year_of_issue
-        self.weight = weight
-
-def type_truck (self):
-    if self.type ==  "Mersedes - Benz"  or "Reno":
-        return type
-    else:
-        print("Bed car")
+        self.max_over = max_over
+        self.min_over = min_over
+        self.weight_truck = weight_truck
+        self.travel_time = travel_time
 
 
-# h = Car_truck("Mersedes - Benz", 1996, 2000)
-# print (h.type)
 
